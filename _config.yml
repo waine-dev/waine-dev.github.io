@@ -13,6 +13,7 @@ sass:
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-seo-tag
 
 # 排除文件
 exclude:
