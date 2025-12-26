@@ -1,0 +1,7 @@
+// 清除浮动（用于footer）
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+

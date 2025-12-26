@@ -1,0 +1,59 @@
+@use "variables" as *;
+
+// 头部样式
+.site-header {
+    border-top: 5px solid #424242;
+    border-bottom: 1px solid $border-color;
+    min-height: $header-height;
+    position: relative;
+    background-color: $background-color;
+}
+
+.site-title {
+    font-size: 26px;
+    font-weight: 300;
+    line-height: $header-height;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+    float: left;
+    color: #424242;
+    text-decoration: none;
+    transition: color $transition-speed ease;
+
+    &:hover {
+        color: $primary-color;
+        text-decoration: none;
+    }
+}
+
+// 导航菜单
+.site-nav {
+    float: right;
+    line-height: $header-height;
+}
+
+.nav-trigger {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.page-link {
+    color: #111;
+    line-height: 1.5;
+    margin-left: 20px;
+    text-decoration: none;
+    transition: color $transition-speed ease;
+
+    &:hover {
+        color: $primary-color;
+        text-decoration: underline;
+    }
+
+    &:not(:last-child) {
+        margin-right: 20px;
+    }
+}
+

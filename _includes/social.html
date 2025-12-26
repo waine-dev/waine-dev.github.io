@@ -1,0 +1,29 @@
+{%- if site.minima.social_links -%}
+  <ul class="social-media-list">
+    {%- if site.minima.social_links.github -%}
+      <li>
+        <a href="https://github.com/{{ site.minima.social_links.github | cgi_escape | escape }}" title="{{ site.minima.social_links.github | escape }}">
+          <svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg>
+          <span class="username">{{ site.minima.social_links.github | escape }}</span>
+        </a>
+      </li>
+    {%- endif -%}
+    {%- if site.minima.social_links.twitter -%}
+      <li>
+        <a href="https://www.twitter.com/{{ site.minima.social_links.twitter | cgi_escape | escape }}" title="{{ site.minima.social_links.twitter | escape }}">
+          <svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#twitter' | relative_url }}"></use></svg>
+          <span class="username">{{ site.minima.social_links.twitter | escape }}</span>
+        </a>
+      </li>
+    {%- endif -%}
+    {%- if site.minima.social_links.email -%}
+      <li>
+        <a class="u-email" href="mailto:{{ site.minima.social_links.email }}" title="{{ site.minima.social_links.email }}">
+          <svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#email' | relative_url }}"></use></svg>
+          <span class="username">{{ site.minima.social_links.email }}</span>
+        </a>
+      </li>
+    {%- endif -%}
+  </ul>
+{%- endif -%}
+

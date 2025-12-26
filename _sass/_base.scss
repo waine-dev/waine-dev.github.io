@@ -1,0 +1,114 @@
+@use "variables" as *;
+
+// 基础样式
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-family;
+    line-height: $base-line-height;
+    color: $text-color;
+    background-color: $background-color;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: $wrapper-max-width;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $wrapper-padding;
+    padding-left: $wrapper-padding;
+}
+
+// Markdown 内容样式（统一用于 posts 和 pages）
+.post-content,
+.page-content {
+    h1 {
+        font-size: 42px;
+        letter-spacing: -1px;
+        line-height: 1.2;
+        margin-bottom: 20px;
+        color: $primary-color;
+    }
+
+    h2 {
+        font-size: 32px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        color: $secondary-color;
+        border-bottom: 2px solid $border-color;
+        padding-bottom: 10px;
+    }
+
+    h3 {
+        font-size: 26px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        color: $secondary-color;
+    }
+
+    p {
+        margin-bottom: 16px;
+        line-height: 1.8;
+    }
+
+    ul,
+    ol {
+        margin-left: 30px;
+        margin-bottom: 16px;
+        line-height: 1.8;
+    }
+
+    li {
+        margin-bottom: 8px;
+    }
+
+    a {
+        color: $accent-color;
+        text-decoration: none;
+        transition: color $transition-speed ease;
+
+        &:hover {
+            color: $primary-color;
+            text-decoration: underline;
+        }
+    }
+
+    code {
+        background-color: $light-gray;
+        padding: 2px 6px;
+        border-radius: 3px;
+        font-size: 0.9em;
+    }
+
+    pre {
+        background-color: $light-gray;
+        padding: 16px;
+        border-radius: 5px;
+        overflow-x: auto;
+        margin-bottom: 16px;
+
+        code {
+            background-color: transparent;
+            padding: 0;
+        }
+    }
+
+    blockquote {
+        border-left: 4px solid $accent-color;
+        padding-left: 20px;
+        margin-left: 0;
+        color: #666;
+        font-style: italic;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin: 20px 0;
+    }
+}
+

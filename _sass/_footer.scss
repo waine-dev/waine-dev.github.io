@@ -1,0 +1,87 @@
+@use "variables" as *;
+
+// 页脚样式
+.site-footer {
+    border-top: 1px solid $border-color;
+    padding: $wrapper-padding 0;
+    background-color: $footer-bg;
+}
+
+.footer-col-wrapper {
+    font-size: 15px;
+    color: $muted-color;
+    margin-left: -15px;
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+.footer-col {
+    float: left;
+    margin-bottom: 15px;
+    padding-left: 15px;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-media-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        display: inline-block;
+        margin-right: 15px;
+    }
+
+    a {
+        color: $muted-color;
+        text-decoration: none;
+        transition: color $transition-speed ease;
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}
+
+.svg-icon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    fill: currentColor;
+    vertical-align: text-bottom;
+    margin-right: 5px;
+}
+
+.rss-subscribe {
+    margin-top: 30px;
+    font-size: 14px;
+    color: $muted-color;
+
+    a {
+        color: $accent-color;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.feed-subscribe a {
+    color: $muted-color;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+
+    &:hover {
+        color: $primary-color;
+    }
+}
+

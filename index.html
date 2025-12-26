@@ -1,22 +1,10 @@
 ---
-layout: default
+layout: home
 title: 首页
 ---
 
-<div class="home">
-    <h1>欢迎来到 {{ site.title }}</h1>
-    <p>{{ site.description }}</p>
-    
-    <h2>最新文章</h2>
-    <ul class="post-list">
-        {% for post in site.posts limit:5 %}
-        <li>
-            <span class="post-meta">{{ post.date | date: "%Y年%m月%d日" }}</span>
-            <h3>
-                <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-            </h3>
-        </li>
-        {% endfor %}
-    </ul>
+<div class="home-intro">
+    <h1 class="welcome-title">欢迎来到 {{ site.title }}</h1>
+    <p class="welcome-description">{{ site.description }}</p>
 </div>
 

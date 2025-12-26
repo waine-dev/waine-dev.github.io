@@ -2,10 +2,14 @@
 title: Waine Dev
 description: Personal development blog
 author: Waine Dev
+email: # 可选：你的邮箱
+lang: zh-CN
 
 # 构建设置
 markdown: kramdown
 highlighter: rouge
+sass:
+  style: compressed
 plugins:
   - jekyll-feed
   - jekyll-sitemap
@@ -20,10 +24,11 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
 
-# 主题设置（可选）
-# theme: minima
-
-# 网站URL（GitHub Pages会自动设置）
-# url: "https://waine-dev.github.io"
-# baseurl: ""
+# Minima 主题配置（仅用于social链接）
+minima:
+  social_links:
+    # 可以在这里添加社交媒体链接
+    # github: waine-dev
+    # twitter: username
+    # email: your-email@example.com
 

@@ -1,0 +1,50 @@
+@use "variables" as *;
+
+// 主内容区域
+.page-content {
+    padding: $wrapper-padding 0;
+}
+
+// 首页样式
+.home {
+    padding: $wrapper-padding 0;
+}
+
+.home-intro {
+    margin-bottom: 50px;
+    padding: 40px 0;
+    text-align: center;
+    background: linear-gradient(135deg, $gradient-start 0%, $gradient-end 100%);
+    color: #fff;
+    border-radius: $border-radius;
+}
+
+.welcome-title {
+    font-size: 42px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.welcome-description {
+    font-size: 20px;
+    opacity: 0.95;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.page-heading {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: $primary-color;
+}
+
+.post-list-heading {
+    font-size: 28px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: $secondary-color;
+    border-bottom: 2px solid $border-color;
+    padding-bottom: 10px;
+}
+
