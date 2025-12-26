@@ -1,0 +1,29 @@
+# Jekyll 配置文件
+title: Waine Dev
+description: Personal development blog
+author: Waine Dev
+
+# 构建设置
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# 排除文件
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# 主题设置（可选）
+# theme: minima
+
+# 网站URL（GitHub Pages会自动设置）
+# url: "https://waine-dev.github.io"
+# baseurl: ""
+
